@@ -41,13 +41,13 @@ const Dashboard: React.FC = () => {
           type="text"
           placeholder="Digite o nome do repositório"
           value={newRepo}
-          onChange={e => setNewRepo(e.target.value)}
+          onChange={(e) => setNewRepo(e.target.value)}
         />
         <button type="submit">Pesquisar</button>
       </Form>
 
       <Repositories>
-        {repositories.map(repository => (
+        {repositories.map((repository) => (
           <a href="repo" key={repository.id}>
             <img
               src={repository.owner.avatar_url}
