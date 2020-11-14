@@ -39,7 +39,7 @@ const Repository: React.FC = () => {
   const [issues, setIssues] = useState<Issue[]>([]);
 
   useEffect(() => {
-    api.get<Repository>(`/repos/${params.repository}`).then((response) => {
+    api.get<Repository>(`/repos/${params.repository}`, { cache: { readOnError: true } }).then((response) => {
       setRepository(response.data);
     });
 
