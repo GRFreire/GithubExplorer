@@ -11,7 +11,7 @@
   <h3 align="center">GithubExplorer</h3>
 
   <p align="center">
-    <a href="https://github.com/GRFreire/GithubExplorer">Demo</a>
+    <a href="https://github-explorer-grfreire.vercel.app/">Demo</a>
   </p>
 </p>
 
